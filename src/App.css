@@ -1,26 +1,123 @@
-.App {
+.app {
+  min-height: 100vh;
+  position: relative;
+  padding: 60px;
+  font-family: 'Tiny5', monospace;
+}
+
+/* Main name in top-left - largest text */
+.name {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1;
+}
+
+/* Greeting below name */
+.greeting {
+  position: absolute;
+  top: 140px;
+  left: 60px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1;
+}
+
+/* Acting inquiries in bottom-left */
+.acting-inquiries {
+  position: absolute;
+  bottom: 120px;
+  left: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.acting-inquiries div {
+  margin-bottom: 2px;
+}
+
+/* Book recommendation in middle-right */
+.book-recommendation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(20%);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.book-link {
+  color: var(--text-color);
+  text-decoration: underline;
+  font-size: 16px;
 }
 
-.App-logo:hover {
-  height: 80vmin;
+.book-link:hover {
+  color: var(--roast-chicken);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Cowboy hat icon in bottom-right */
+.cowboy-hat {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Pixelated styling for all text */
+.name,
+.greeting,
+.acting-inquiries,
+.book-recommendation {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app {
+    padding: 30px;
   }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .name {
+    top: 30px;
+    left: 30px;
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .greeting {
+    top: 100px;
+    left: 30px;
+    font-size: 18px;
+  }
+  
+  .acting-inquiries {
+    bottom: 100px;
+    left: 30px;
+    font-size: 14px;
+  }
+  
+  .book-recommendation {
+    top: 60%;
+    left: 50%;
+    transform: translateX(0);
+    font-size: 14px;
+  }
+  
+  .cowboy-hat {
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
   }
 }

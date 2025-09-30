@@ -1,0 +1,30 @@
+/* Import Tiny5 font */
+@import url('https://fonts.googleapis.com/css2?family=Tiny5:wght@400&display=swap');
+
+/* Color variables from the palette */
+:root {
+  --deciduous: #606C38;
+  --coniferous: #283618;
+  --cream: #FEFAE0;
+  --roast-chicken: #DDA15E;
+  --smoked-chicken: #BC6C25;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tiny5', monospace;
+  background-color: var(--coniferous);
+  color: var(--cream);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
