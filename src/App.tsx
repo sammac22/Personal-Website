@@ -1,43 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Home/Home';
+import Todo from './Todo/Todo';
+import Privacy from './Todo/Privacy';
+import Support from './Todo/Support';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      {/* This is me */}
-      <div className="name">
-        Sam MacGinty
-      </div>
-
-      {/* Hi again */}
-      <div className="greeting">
-        Hi, nice to meet you.
-      </div>
-
-      {/* Why are you in here? */}
-      <div className="acting-inquiries">
-        <div>For acting inquiries</div>
-        <div>please reach out to my</div>
-        <div>agent</div>
-      </div>
-
-      {/* This one is serious */}
-      <div className="book-recommendation">
-        <a href="https://www.jenniferackermanauthor.com/genius-ofbirds" className="book-link">
-          You should read this book
-        </a>
-      </div>
-
-      {/* Bark twice if you're in Milwaukee */}
-      <div className="cowboy-hat">
-        <img 
-          src="/Hat.png" 
-          alt="Hat icon" 
-          width="40" 
-          height="24"
-        />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/TODO" element={<Todo />} />
+        <Route path="/TODO/Privacy" element={<Privacy />} />
+        <Route path="/TODO/Support" element={<Support />} />
+      </Routes>
+    </Router>
   );
 };
 

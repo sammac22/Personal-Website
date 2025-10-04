@@ -1,0 +1,76 @@
+/* Todo page specific styles - Responsive Layout */
+.todo-description {
+  grid-area: main;
+  align-self: start;
+  justify-self: start;
+  max-width: min(400px, 90vw);
+  margin-bottom: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.todo-warning {
+  grid-area: main;
+  align-self: end;
+  justify-self: start;
+  max-width: min(300px, 80vw);
+  padding: clamp(2rem, 5vw, 3rem);
+}
+
+.todo-warning p {
+  margin-bottom: 0.25rem;
+}
+
+/* Centered content container for Privacy and Support */
+.centered-container {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  text-align: center;
+  max-width: min(800px, 90vw);
+}
+
+/* Override link font-size within centered container to inherit parent text size */
+.centered-container .link {
+  font-size: inherit;
+}
+
+/* Support message specific styling */
+.support-message .link {
+  white-space: nowrap;
+}
+
+/* Responsive adjustments for Todo */
+@media (max-width: 768px) {
+  .todo-description {
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .todo-warning {
+    justify-self: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .centered-container {
+    max-width: 95vw;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-description,
+  .todo-warning {
+    max-width: 95vw;
+  }
+  
+  .todo-warning p {
+    margin-bottom: 0.5rem;
+  }
+}

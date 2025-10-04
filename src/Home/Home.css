@@ -1,0 +1,83 @@
+/* Home page specific styles - Responsive Layout */
+.home-header {
+  grid-area: header;
+  align-self: start;
+  justify-self: start;
+  padding: clamp(0.5rem, 2vw, 1rem);
+}
+
+.home-greeting {
+  grid-area: main;
+  align-self: start;
+  justify-self: start;
+  max-width: min(400px, 90vw);
+  margin-bottom: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.home-contact {
+  grid-area: main;
+  align-self: end;
+  justify-self: start;
+  max-width: min(300px, 80vw);
+  padding: clamp(2rem, 5vw, 3rem);
+}
+
+.home-contact p {
+  margin-bottom: 0.25rem;
+}
+
+.home-book {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  max-width: min(200px, 70vw);
+}
+
+.home-icon {
+  grid-area: footer;
+  align-self: end;
+  justify-self: end;
+}
+
+/* Responsive adjustments for Home */
+@media (max-width: 768px) {
+  .home-header {
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .home-greeting {
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-contact {
+    justify-self: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .home-book {
+    margin: 1rem 0;
+  }
+  
+  .home-icon {
+    justify-self: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-greeting,
+  .home-contact,
+  .home-book {
+    max-width: 95vw;
+  }
+  
+  .home-contact p {
+    margin-bottom: 0.5rem;
+  }
+}
