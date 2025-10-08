@@ -3,7 +3,7 @@
   "name": "a_website_by_sam_macginty",
   "icons": [
     {
-      "src": "Hat.png",
+      "src": "Hat-square.png",
       "type": "image/png",
       "sizes": "192x192"
     },
