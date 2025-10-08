@@ -6,7 +6,7 @@ const Privacy: React.FC = () => {
     <div className="app">
       {/* This is me */}
       <h1 className="home-header text-large">
-        // TODO
+        {`// TODO`}
       </h1>
 
       {/* Main page content, centered */}
@@ -16,7 +16,7 @@ const Privacy: React.FC = () => {
         </h2>
 
         <p className="text-medium">
-          // TODO does not collect any of your data.
+          {`// TODO`} does not collect any of your data.
         </p>
       </div>
 

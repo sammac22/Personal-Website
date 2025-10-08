@@ -6,7 +6,7 @@ const Todo: React.FC = () => {
     <div className="app">
       {/* This is me */}
       <h1 className="home-header text-large">
-        // TODO
+        {`// TODO`}
       </h1>
 
       {/* Description */}
