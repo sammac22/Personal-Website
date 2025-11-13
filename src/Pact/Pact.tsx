@@ -1,28 +1,28 @@
 import React from 'react';
-import './Todo.css';
+import './Pact.css';
 
-const Todo: React.FC = () => {
+const Pact: React.FC = () => {
   return (
     <div className="app">
       {/* This is me */}
       <h1 className="home-header text-large">
-        {`// TODO`}
+        {`Pact`}
       </h1>
 
       {/* Description */}
       <p className="todo-description text-medium">
-        I wanted a simple to-do app with an interactive widget.
+        I need my friends to keep me accountable.
       </p>
 
       {/* Warning */}
       <div className="todo-warning text-small">
-        <p>It gets angry if you have too many TODOs. You wouldn't like it when it's angry.</p>
+        <p>This app lets you make daily or weekly Pacts with friends.</p>
       </div>
 
       {/* Action link */}
       <div className="home-book text-small">
-        <a href="https://apps.apple.com/us/app/todo/id6749722820" className="link">
-          So I made it.
+        <a href="https://www.jenniferackermanauthor.com/genius-ofbirds" className="link">
+          Everyone in the Pact needs to complete it or everyone loses their streak
         </a>
       </div>
 
@@ -38,4 +38,5 @@ const Todo: React.FC = () => {
   );
 };
 
-export default Todo;
+export default Pact;
+
