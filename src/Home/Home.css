@@ -44,28 +44,34 @@
 /* Responsive adjustments for Home */
 @media (max-width: 768px) {
   .home-header {
-    justify-self: center;
-    text-align: center;
+    justify-self: start;
+    text-align: left;
   }
-  
+
   .home-greeting {
-    justify-self: center;
-    text-align: center;
+    justify-self: start;
+    text-align: left;
     margin-bottom: 1.5rem;
+    max-width: 65vw;
+    padding-left: clamp(0.5rem, 4vw, 2rem);
   }
-  
+
   .home-contact {
-    justify-self: center;
-    text-align: center;
+    justify-self: start;
+    text-align: left;
     margin-top: 1.5rem;
+    padding-left: clamp(0.5rem, 4vw, 2rem);
   }
-  
+
   .home-book {
+    justify-self: end;
+    text-align: right;
     margin: 1rem 0;
+    padding-right: clamp(0.5rem, 4vw, 2rem);
   }
-  
+
   .home-icon {
-    justify-self: center;
+    justify-self: start;
     margin-top: 1rem;
   }
 }
@@ -74,9 +80,9 @@
   .home-greeting,
   .home-contact,
   .home-book {
-    max-width: 95vw;
+    max-width: 85vw;
   }
-  
+
   .home-contact p {
     margin-bottom: 0.5rem;
   }
