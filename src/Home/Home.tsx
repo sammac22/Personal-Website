@@ -16,15 +16,15 @@ const Home: React.FC = () => {
 
       {/* Why are you in here? */}
       <div className="home-contact text-small">
-        <p>For acting inquiries</p>
-        <p>please reach out to my</p>
-        <p>agent</p>
+        <a href="https://apps.apple.com/us/app/pact-accountability/id6755131489" className="link">
+          This is how I force myself to build good habits
+        </a>
       </div>
 
       {/* This one is serious */}
       <div className="home-book text-small">
-        <a href="https://www.jenniferackermanauthor.com/genius-ofbirds" className="link">
-          You should read this book
+        <a href="https://sammacginty.substack.com/" className="link">
+          Read my thoughts here
         </a>
       </div>
 
